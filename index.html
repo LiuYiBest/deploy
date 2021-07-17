@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>LYD八git 卦图</title>
+</head>
+
+<body>
+    <style id="style"></style>
+    <div id="html"></div>
+    <div id="div1Wrapper">
+        <div id="div1"></div>
+    </div>
+    <style>
+        /* 清空样式 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        *::after {
+            box-sizing: border-box;
+        }
+
+        *::before {
+            box-sizing: border-box;
+        }
+
+        #html {
+            word-break: break-all;
+        }
+
+        #div1 {
+            position: fixed;
+            left: 50%;
+            transform: translate(-50%);
+            top: 20px;
+        }
+
+        #div1::before {
+            content: '';
+            position: absolute;
+            display: block;
+        }
+
+        #div1::after {
+            content: '';
+            position: absolute;
+            display: block;
+        }
+
+        @media (max-width:500px) {
+            #html {
+                height: 50vh;
+                overflow: auto;
+            }
+
+            #div1Wrapper {
+                height: 50vh;
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+
+            #div1 {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+        }
+    </style>
+    <script src="main.js">
+
+    </script>
+</body>
+
+</html>
